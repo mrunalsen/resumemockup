@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <style>
-        th, td {
-  text-align: left;}
+        * {
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            text-align: left;
+            border-bottom: 1px solid gray;
+        }
     </style>
 </head>
+
 <body>
-    <section style="margin: 0 200px;">
+    <section style="background: #eee; max-width: 700px; margin: 0 auto; padding: 0 50px; border-top: 5px solid black; border-bottom: 5px solid black;">
         <!-- header -->
-        <table  width="100%">
+        <table style="width: 100%; table-layout: fixed;">
             <tr>
-                <td width=70%>
+                <td style="width: 70%;">
                     <h1>Jonathan Doe</h1>
                     <h4>Web designer, Director</h4>
                 </td>
-                <td width=30%>
-                    <button>Download PDF</button> <br>
-                    <a href="mailto:name@yourdomain.com">name@yourdomain.com</a>
+                <td style="width:30%">
+                    <button style="background-color: white;">Download PDF</button> <br>
+                    <a href="mailto:name@yourdomain.com ">name@yourdomain.com</a>
                     <p>(313)-867-5309</p>
                 </td>
             </tr>
         </table>
         <!-- Profile -->
-        <table >
-            <tr >
-                <td>
+        <table style="width: 100%; table-layout: fixed; ">
+            <tr>
+                <td style="width: 200px;">
                     <h4>Profile</h4>
                 </td>
-                <td style="padding-left: 50px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quasi libero, consequuntur in earum reiciendis asperiores repudiandae dolorem aliquid, vel non itaque voluptates, tempore fugit expedita odit officia ab dignissimos similique dolorum quod laboriosam eum facere? Qui, beatae! Ut corporis mollitia at et esse architecto amet rerum modi doloremque! Corporis.</td>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quasi libero, consequuntur in earum reiciendis asperiores repudiandae dolorem aliquid, vel non itaque voluptates, tempore fugit expedita odit officia ab dignissimos
+                    similique dolorum quod laboriosam eum facere? Qui, beatae! Ut corporis mollitia at et esse architecto amet rerum modi doloremque! Corporis.</td>
             </tr>
         </table>
 
         <!-- skills -->
-        <table>
+        <table style="width: 100%; table-layout: fixed; ">
             <tr>
-                <td>
+                <td style="width: 200px;">
                     <h4>Skills</h4>
                 </td>
-                <td style="padding: 50px;">
+                <td>
                     <h4>Web Design</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, blanditiis!</p>
                 </td>
-                <td style="padding: 50px;">
+                <td>
                     <h4>Interface Design</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, blanditiis!</p>
                 </td>
-                <td style="padding: 50px;">
+                <td>
                     <h4>Project Direction</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, blanditiis!</p>
                 </td>
@@ -58,27 +68,27 @@
         </table>
 
         <!-- technical -->
-        <table>
-            <tr >
-                <td>
+        <table style="width: 100%; table-layout: fixed; ">
+            <tr>
+                <td style="width: 200px;">
                     <h4>Technical</h4>
                 </td>
-                <td style="padding: 50px; width: 33.33%;">
+                <td>
                     <div>
                         <h5>XHTML</h5>
                         <h5>CSS</h5>
                         <h5>Javascript</h5>
                     </div>
                 </td>
-                <td style="padding: 50px; width: 33.33%;">
+                <td>
                     <div>
                         <h5>Jquery</h5>
                         <h5>PHP</h5>
                         <h5>PHP</h5>
-                        
+
                     </div>
                 </td>
-                <td style="padding: 50px; width: 33.33%;">
+                <td>
                     <div>
                         <h5>OS X</h5>
                         <h5>Windows XP/Vista</h5>
@@ -88,40 +98,38 @@
             </tr>
         </table>
 
-       
+
         <!-- experience -->
-        <table>
+        <table style="width: 100%; table-layout: fixed; ">
             <tr>
-                <td>
+                <td style="width: 200px; vertical-align: top;" rowspan="2">
                     <h4>Experience</h4>
                 </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td style="padding-left: 50px;">
-                                <h4>Facebook</h4>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quam, ratione sunt aliquid facere hic saepe dolor amet? Nesciunt, in?</p>
-                            </td>
-                        
-                        </tr>
-                        <tr>
-                            <td style="padding-left: 50px;">
-                                <h4>Apple</h4>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quam, ratione sunt aliquid facere hic saepe dolor amet? Nesciunt, in?</p>
-                            </td>
-                        </tr>
-                    </table>
+                <td colspan="2">
+                    <h4>Facebook</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quam, ratione sunt aliquid facere hic saepe dolor amet? Nesciunt, in?</p>
                 </td>
-                
+                <td style="text-align: right;">
+                    2005
+                </td>
+            </tr>
 
+            <tr>
+                <td colspan="2">
+                    <h4>Apple</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quam, ratione sunt aliquid facere hic saepe dolor amet? Nesciunt, in?</p>
+                </td>
+                <td style="text-align: right;">
+                    2005
+                </td>
             </tr>
         </table>
-        <table>
+        <table style="width: 100%; table-layout: fixed; ">
             <tr>
-                <td>
+                <td style="width: 200px;">
                     <h4>Education</h4>
                 </td>
-                <td style="padding-left: 50px;">
+                <td style="">
                     <p>
                         <h4>Indiana University</h4>
                         <p>Dual Major - <b>4.0 GPA</b></p>
@@ -129,16 +137,17 @@
                 </td>
             </tr>
         </table>
-        <table  style="margin-left: auto; margin-right:auto">
+        <table style="margin-left: auto; margin-right:auto ">
             <tr>
-                <td >
+                <td style="border-bottom: 0;">
                     <p>
-                        Jonathan Doe-<a href="mailto:name@yourdomain.com"name="mailto">name@yourdomain.com</a> - (313) - 871-5309
+                        Jonathan Doe-<a href="mailto:name@yourdomain.com " name="mailto ">name@yourdomain.com</a> - (313) - 871-5309
                     </p>
                 </td>
             </tr>
-        </table>    
+        </table>
 
     </section>
 </body>
+
 </html>
